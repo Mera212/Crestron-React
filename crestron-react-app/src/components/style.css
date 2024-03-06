@@ -1,0 +1,18 @@
+
+  
+  
+  .MuiSlider-thumb {
+    width: 45;
+    height: 45;
+  }
+  .MuiSlider-vertical .MuiSlider-thumb {
+    margin-left: -12px;
+    margin-bottom: -5px;
+}
+.MuiSlider-vertical .MuiSlider-track {
+  width: 15px;
+}
+.MuiSlider-vertical .MuiSlider-rail {
+  width: 15px;
+  height: 100%;
+}
