@@ -3,8 +3,8 @@ import "./App.css";
 import Start from "./components/Start";
 import Source from "./components/Source";
 import ShutDown from "./components/ShutDown";
-import backgroundImageA from "./assets/1920x1200-3a.jpg";
-import backgroundImageB from "./assets/1920x1200-3b.jpg";
+import backgroundImageA from "./assets/1920x1200-4a.jpg";
+import backgroundImageB from "./assets/1920x1200-4b.jpg";
 
 function App() {
   const [page, setPage] = useState("start");

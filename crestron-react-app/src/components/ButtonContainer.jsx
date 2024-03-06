@@ -8,6 +8,7 @@ const ButtonContainer = ({
   label,
   joinValues,
   buttonLabel,
+  setSubpage,
 }) => {
   const [selectedButton, setSelectedButton] = useState(null);
 
@@ -16,42 +17,46 @@ const ButtonContainer = ({
   };
 
   const styles = {
-    container: {},
+    container: {
+      display: "flex",
+      flexDirection: "column", // For vertical buttons
+      marginBottom: "10px",
+    },
+    horizontalContainer: {
+      display: "flex",
+      flexWrap: "wrap",
+      justifyContent: "space-around",
+      width: "583px",
+    },
     button: {
       display: "flex",
-      justifyContent: "space-evenly",
-      padding: "1px",
-      margin: "10px",
+      justifyContent: "center",
+      alignItems: "center",
+      padding: "10px",
       backgroundColor: "#1655a2",
       height: "75px",
       width: "135px",
       textAlign: "center",
       color: "white",
-      alignItems: "center",
+      margin: "5px",
+      borderRadius: "15px", // Adjust spacing between buttons
     },
     buttonSelected: {
       display: "flex",
-      justifyContent: "space-evenly",
+      justifyContent: "center",
+      alignItems: "center",
       padding: "10px",
-      margin: "20px",
-      backgroundColor: "#249889",
       height: "75px",
       width: "135px",
       textAlign: "center",
+      backgroundColor: "#249889",
       color: "red",
-      alignItems: "center",
-      borderWidth: 1,
-      borderColor:"red",
-      fontSize: "24px",
-    
-
+      borderRadius: "15px", // Adjust spacing between buttons
     },
     label: {
-      display: "flex",
-      flexGrow: "10",
-      alignSelf: "center",
+      flexGrow: 1, // Allow label to expand to take up remaining space
+      textAlign: "center",
       marginBottom: "10px",
-      marginLeft: "274px",
     },
   };
 
@@ -63,18 +68,23 @@ const ButtonContainer = ({
         button: styles.button,
         buttonSelected: styles.buttonSelected,
       }}
+      label={""}
       join={joinValues[index]}
       buttonLabel={buttonLabel[index]}
       isSelected={joinValues[index] === selectedButton}
+      setSubpage={setSubpage}
       handleClick={() => handleButtonClick(joinValues[index])}
     />
   ));
 
   return (
-    <><h1 style={styles.label}>{label}</h1>
-      <div style={containerStyles}>
-        
-        <div style={containerStyles}>{buttons}</div>
+    <>
+      <p style={styles.label}>{label}</p>
+      <div
+        style={
+          label === "VALIKKO" ? styles.container : styles.horizontalContainer
+        }>
+        {buttons}
       </div>
     </>
   );

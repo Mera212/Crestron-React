@@ -6,7 +6,7 @@ const Start = ({setPage}) => {
       };
     const styles = {
     container: {
-      color: "#fff",
+      color: "white",
       width: "100vw", // Set container width to cover the whole screen
       height: "100vh", // Set container height to cover the whole screen
       display: "flex",
