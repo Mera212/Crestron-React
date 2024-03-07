@@ -18,8 +18,11 @@ const VolumeSlider = ({ join,label }) => {
   };
   const labelStyle = {
     textAling: "center",
+    textWrap:"nowrap",
     marginBotton: "20px",
     padding: "20px",
+    marginLeft:"40px",
+    fontSize:"30px"
   }
 
   return (
