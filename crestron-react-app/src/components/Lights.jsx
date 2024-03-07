@@ -70,7 +70,8 @@ const Lights = () => {
         "TILANNE 4",
         "TILANNE 5",
         "TILANNE 6",
-        "TILANNE OFF",
+        "TILANNE 7",
+        "TILANNE OFF"
       ]}
     />
   );
