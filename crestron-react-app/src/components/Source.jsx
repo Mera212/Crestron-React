@@ -4,9 +4,11 @@ import Lights from "./Lights";
 import Menu from "./Menu";
 import Audio from "./Audio";
 import Projector from "./Projector";
+
 import Navbar from "./NavBar";
 import "./style.css";
 import { useState } from "react";
+import DsDisplays from "./DsDisplays";
 
 const Source = ({ setPage }) => {
   const [subPage, setSubpage] = useState("1");
@@ -91,6 +93,10 @@ console.log(subPage)
         ): subPage === "3" ? (
           
           <Projector/>
+            
+        ) : subPage === "4" ? (
+          
+          <DsDisplays/>
             
         ) : null}
       </div>

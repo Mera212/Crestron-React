@@ -32,7 +32,7 @@ const ButtonContainer = ({
   ));
 
   return (
-    <div style={{ marginTop: "100px" }}>
+    <div style={{ marginTop: "1px" }}>
         <p style={styles.label}>{label}</p>
       <div
         style={
