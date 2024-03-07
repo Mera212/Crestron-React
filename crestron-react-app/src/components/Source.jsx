@@ -3,6 +3,7 @@ import power from "../assets/power.png";
 import Lights from "./Lights";
 import Menu from "./Menu";
 import Audio from "./Audio";
+import Projector from "./Projector";
 import Navbar from "./NavBar";
 import "./style.css";
 import { useState } from "react";
@@ -73,7 +74,7 @@ const Source = ({ setPage }) => {
   const handleClick = () => {
     setPage("shutdown");
   };
-
+console.log(subPage)
   return (
     <>
       
@@ -86,6 +87,10 @@ const Source = ({ setPage }) => {
         ) : subPage === "2" ? (
           
           <Audio/>
+            
+        ): subPage === "3" ? (
+          
+          <Projector/>
             
         ) : null}
       </div>
