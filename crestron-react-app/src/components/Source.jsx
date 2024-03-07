@@ -76,7 +76,7 @@ const Source = ({ setPage }) => {
 
   return (
     <>
-      <Navbar/>
+      
       <div style={containerStyle.vertical}>
         <Menu setSubpage={setSubpage}/>
       </div>
