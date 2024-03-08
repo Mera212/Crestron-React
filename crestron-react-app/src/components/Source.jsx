@@ -61,6 +61,9 @@ const Source = ({ setPage }) => {
       backgroundColor: "white",
       width: "1920px",
     },
+    area:{
+      
+    },
   };
   const powerContainerStyle = {
     position: "absolute",
