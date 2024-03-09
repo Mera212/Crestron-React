@@ -24,6 +24,8 @@ const Menu = ({setSubpage}) => {
       width: "135px",
       textAlign: "center",
       color: "white",
+      borderWidht: "2px",
+        borderColor:"white",
       margin: "5px",
       borderRadius: "15px", // Adjust spacing between buttons
     },
@@ -36,6 +38,8 @@ const Menu = ({setSubpage}) => {
       width: "135px",
       textAlign: "center",
       backgroundColor: "#249889",
+      borderWidht: "2px",
+        borderColor:"white",
       color: "white",
       borderRadius: "15px", // Adjust spacing between buttons
     },
@@ -52,14 +56,15 @@ const Menu = ({setSubpage}) => {
          styles={styles}
           label="VALIKKO"
           setSubpage={setSubpage}
-          count={5}
-          joinValues={["1", "2", "3", "4", "5"]}
+          count={6}
+          joinValues={["1", "2", "3", "4", "5","6"]}
           buttonLabel={[
             "VALAISTUS",
             "AUDIO",
             "PROJEKTORI",
             "JUORU",
             "JUORU AUDIO",
+            "SÄHKÖT"
           ]}
         />
   );

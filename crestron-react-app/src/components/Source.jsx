@@ -1,9 +1,11 @@
 import PropTypes from "prop-types";
-import power from "../assets/power.png";
 import Lights from "./Lights";
 import Menu from "./Menu";
 import Audio from "./Audio";
 import Projector from "./Projector";
+import Camera from "./Camera";
+import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
+import Electric from "./Electric";
 
 import Navbar from "./NavBar";
 import "./style.css";
@@ -70,11 +72,6 @@ const Source = ({ setPage }) => {
     top: "20px",
     right: "20px",
   };
-  const powerStyles = {
-    width: "50px",
-    height: "auto",
-    background: "none",
-  };
 
   const handleClick = () => {
     setPage("shutdown");
@@ -101,18 +98,24 @@ console.log(subPage)
           
           <DsDisplays/>
             
-        ) : null}
+        ) : subPage === "5" ? (
+          
+          <Camera/>
+            
+        ) : subPage === "6" ? (
+          
+         <Electric/>
+            
+        ): null}
       </div>
       <div style={powerContainerStyle}>
-        <button
-          style={powerStyles}
-          onClick={handleClick}>
-          <img
-            src={power}
-            alt="Power"
-            style={powerStyles}
-          />
-        </button>
+      
+      <PowerSettingsNewIcon
+      onClick={handleClick}
+        sx={{
+          fontSize: "90px"
+        }}
+      />
       </div>
     </>
   );

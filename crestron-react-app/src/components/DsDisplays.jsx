@@ -12,7 +12,7 @@ const DsDisplays = () => {
       flexWrap: "wrap",
       justifyContent: "space-around",
       width: "350px",
-      
+
       marginTop: "5px",
     },
     button: {
@@ -25,6 +25,8 @@ const DsDisplays = () => {
       width: "108px",
       textAlign: "center",
       color: "white",
+      borderWidht: "2px",
+      borderColor: "white",
       margin: "5px",
       borderRadius: "15px", // Adjust spacing between buttons
     },
@@ -37,6 +39,8 @@ const DsDisplays = () => {
       width: "108px",
       textAlign: "center",
       backgroundColor: "#249889",
+      borderWidht: "2px",
+      borderColor: "white",
       color: "white",
       borderRadius: "15px", // Adjust spacing between buttons
     },
@@ -46,244 +50,144 @@ const DsDisplays = () => {
       fontSize: "15px",
       marginBottom: "1px",
     },
-    ds:{
-        display:"flex",
-        height:"90px"
-       
+    ds: {
+      display: "flex",
+      height: "90px",
     },
-    dsContainer:{
-    }
+    dsContainer: {},
   };
   return (
     <>
-    
-    <div style={styles.ds}>
-    
-    <ButtonContainer
-      styles={styles}
-      label="CV-14 ESINTYJÄHUONE VASEN"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-      ]}
-    />
-     <ButtonContainer
-      styles={styles}
-      label="NÄYTTÖ"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-      ]}
-    />
-    </div>
-    <div style={styles.ds}>
-    <ButtonContainer
-      styles={styles}
-      label="CV-14 ESINTYJÄHUONE VASEN"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-      ]}
-    />
-     <ButtonContainer
-      styles={styles}
-      label="NÄYTTÖ"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-      ]}
-    />
-    </div>
-    <div style={styles.ds}>
-    <ButtonContainer
-      styles={styles}
-      label="CV-14 ESINTYJÄHUONE VASEN"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-      ]}
-    />
-     <ButtonContainer
-      styles={styles}
-      label="NÄYTTÖ"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-      ]}
-    />
-    </div>
-    <div style={styles.ds}>
-    <ButtonContainer
-      styles={styles}
-      label="CV-14 ESINTYJÄHUONE"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-      ]}
-    />
-     <ButtonContainer
-      styles={styles}
-      label="NÄYTTÖ"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-      ]}
-    />
-    </div>
-    <div>
-    <div style={styles.ds}>
-    <ButtonContainer
-      styles={styles}
-      label="CV-14  VASEN"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-      ]}
-    />
-     <ButtonContainer
-      styles={styles}
-      label="NÄYTTÖ"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-      ]}
-    />
-    </div>
-    <div style={styles.ds}>
-    <ButtonContainer
-      styles={styles}
-      label="CV-14 ESINTYJÄHUONE VASEN"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-      ]}
-    />
-     <ButtonContainer
-      styles={styles}
-      label="NÄYTTÖ"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-      ]}
-    />
-    </div>
-    <div style={styles.ds}>
-    <ButtonContainer
-      styles={styles}
-      label="CV-14 ESINTYJÄHUONE VASEN"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-      ]}
-    />
-     <ButtonContainer
-      styles={styles}
-      label="NÄYTTÖ"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-      ]}
-    />
-    </div>
-    <div style={styles.ds}>
-    <ButtonContainer
-      styles={styles}
-      label="CV-14 ESINTYJÄHUONE VASEN"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-      ]}
-    />
-     <ButtonContainer
-      styles={styles}
-      label="NÄYTTÖ"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-      ]}
-    /></div>
-    </div>
-
+      <div style={styles.ds}>
+        <ButtonContainer
+          styles={styles}
+          label="CV-14 ESINTYJÄHUONE VASEN"
+          count={2}
+          joinValues={["100", "101"]}
+          buttonLabel={["ON", "OFF"]}
+        />
+        <ButtonContainer
+          styles={styles}
+          label="NÄYTTÖ"
+          count={2}
+          joinValues={["100", "101"]}
+          buttonLabel={["ON", "OFF"]}
+        />
+      </div>
+      <div style={styles.ds}>
+        <ButtonContainer
+          styles={styles}
+          label="CV-14 ESINTYJÄHUONE VASEN"
+          count={2}
+          joinValues={["100", "101"]}
+          buttonLabel={["ON", "OFF"]}
+        />
+        <ButtonContainer
+          styles={styles}
+          label="NÄYTTÖ"
+          count={2}
+          joinValues={["100", "101"]}
+          buttonLabel={["ON", "OFF"]}
+        />
+      </div>
+      <div style={styles.ds}>
+        <ButtonContainer
+          styles={styles}
+          label="CV-14 ESINTYJÄHUONE VASEN"
+          count={2}
+          joinValues={["100", "101"]}
+          buttonLabel={["ON", "OFF"]}
+        />
+        <ButtonContainer
+          styles={styles}
+          label="NÄYTTÖ"
+          count={2}
+          joinValues={["100", "101"]}
+          buttonLabel={["ON", "OFF"]}
+        />
+      </div>
+      <div style={styles.ds}>
+        <ButtonContainer
+          styles={styles}
+          label="CV-14 ESINTYJÄHUONE"
+          count={2}
+          joinValues={["100", "101"]}
+          buttonLabel={["ON", "OFF"]}
+        />
+        <ButtonContainer
+          styles={styles}
+          label="NÄYTTÖ"
+          count={2}
+          joinValues={["100", "101"]}
+          buttonLabel={["ON", "OFF"]}
+        />
+      </div>
+      <div>
+        <div style={styles.ds}>
+          <ButtonContainer
+            styles={styles}
+            label="CV-14  VASEN"
+            count={2}
+            joinValues={["100", "101"]}
+            buttonLabel={["ON", "OFF"]}
+          />
+          <ButtonContainer
+            styles={styles}
+            label="NÄYTTÖ"
+            count={2}
+            joinValues={["100", "101"]}
+            buttonLabel={["ON", "OFF"]}
+          />
+        </div>
+        <div style={styles.ds}>
+          <ButtonContainer
+            styles={styles}
+            label="CV-14 ESINTYJÄHUONE VASEN"
+            count={2}
+            joinValues={["100", "101"]}
+            buttonLabel={["ON", "OFF"]}
+          />
+          <ButtonContainer
+            styles={styles}
+            label="NÄYTTÖ"
+            count={2}
+            joinValues={["100", "101"]}
+            buttonLabel={["ON", "OFF"]}
+          />
+        </div>
+        <div style={styles.ds}>
+          <ButtonContainer
+            styles={styles}
+            label="CV-14 ESINTYJÄHUONE VASEN"
+            count={2}
+            joinValues={["100", "101"]}
+            buttonLabel={["ON", "OFF"]}
+          />
+          <ButtonContainer
+            styles={styles}
+            label="NÄYTTÖ"
+            count={2}
+            joinValues={["100", "101"]}
+            buttonLabel={["ON", "OFF"]}
+          />
+        </div>
+        <div style={styles.ds}>
+          <ButtonContainer
+            styles={styles}
+            label="CV-14 ESINTYJÄHUONE VASEN"
+            count={2}
+            joinValues={["100", "101"]}
+            buttonLabel={["ON", "OFF"]}
+          />
+          <ButtonContainer
+            styles={styles}
+            label="NÄYTTÖ"
+            count={2}
+            joinValues={["100", "101"]}
+            buttonLabel={["ON", "OFF"]}
+          />
+        </div>
+      </div>
     </>
   );
 };

@@ -24,6 +24,8 @@ const Lights = () => {
       width: "135px",
       textAlign: "center",
       color: "white",
+      borderWidht: "2px",
+      borderColor: "white",
       margin: "5px",
       borderRadius: "15px", // Adjust spacing between buttons
     },
@@ -36,6 +38,8 @@ const Lights = () => {
       width: "135px",
       textAlign: "center",
       backgroundColor: "#249889",
+      borderWidht: "2px",
+      borderColor: "white",
       color: "white",
       borderRadius: "15px", // Adjust spacing between buttons
     },
@@ -71,7 +75,7 @@ const Lights = () => {
         "TILANNE 5",
         "TILANNE 6",
         "TILANNE 7",
-        "TILANNE OFF"
+        "TILANNE OFF",
       ]}
     />
   );

@@ -6,7 +6,7 @@ const ShutDown = ({ setPage }) => {
   const handleClick = () => {
     setPage("start");
   };
-  CrComLib.subscribeState("1", handleClick());
+  //CrComLib.subscribeState("", handleClick());
   return (
     <div>
       <ButtonContainer

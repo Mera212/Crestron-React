@@ -12,7 +12,8 @@ const Projector = () => {
       flexWrap: "wrap",
       justifyContent: "space-around",
       width: "583px",
-      marginTop: "20px",
+      marginTop: "60px",
+      marginBottom: "60px",
     },
     button: {
       display: "flex",
@@ -24,6 +25,8 @@ const Projector = () => {
       width: "135px",
       textAlign: "center",
       color: "white",
+      borderWidht: "2px",
+        borderColor:"white",
       margin: "5px",
       borderRadius: "15px", // Adjust spacing between buttons
     },
@@ -37,6 +40,8 @@ const Projector = () => {
       textAlign: "center",
       backgroundColor: "#249889",
       color: "white",
+      borderWidht: "2px",
+        borderColor:"white",
       borderRadius: "15px", // Adjust spacing between buttons
     },
     label: {
@@ -48,58 +53,27 @@ const Projector = () => {
   };
   return (
     <>
-    <ButtonContainer
-      styles={styles}
-      label="KAMERA VALINTA"
-      count={3}
-      joinValues={[
-        "100",
-        "101",
-        "102",
-        
-      ]}
-      buttonLabel={[
-        "1",
-        "2",
-        "3",
-        
-      ]}
-    />
-     <ButtonContainer
-      styles={styles}
-      label="PC:T"
-      count={4}
-      joinValues={[
-        "100",
-        "101",
-        "102",
-        
-      ]}
-      buttonLabel={[
-        "1",
-        "2",
-        "TRICASTER",
-        "MYKISTÄ KUVA"
-        
-      ]}
-    />
-    <ButtonContainer
-      styles={styles}
-      label="PROJEKTORI"
-      count={2}
-      joinValues={[
-        "100",
-        "101",
-        "102",
-        
-      ]}
-      buttonLabel={[
-        "ON",
-        "OFF",
-        
-        
-      ]}
-    />
+      <ButtonContainer
+        styles={styles}
+        label="KAMERA VALINTA"
+        count={3}
+        joinValues={["100", "101", "102"]}
+        buttonLabel={["1", "2", "3"]}
+      />
+      <ButtonContainer
+        styles={styles}
+        label="PC:T"
+        count={4}
+        joinValues={["100", "101", "102"]}
+        buttonLabel={["1", "2", "TRICASTER", "MYKISTÄ KUVA"]}
+      />
+      <ButtonContainer
+        styles={styles}
+        label="PROJEKTORI"
+        count={2}
+        joinValues={["100", "101", "102"]}
+        buttonLabel={["ON", "OFF"]}
+      />
     </>
   );
 };
