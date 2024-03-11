@@ -156,6 +156,14 @@ const Camera = () => {
           }}
         />
       </div>
+      <ButtonContainer
+          styles={styles}
+          label="ZOOM"
+          count={2}
+          joinValues={["100", "101", "102"]}
+          buttonLabel={["+", "-"]}
+        />
+
     </>
   );
 };
