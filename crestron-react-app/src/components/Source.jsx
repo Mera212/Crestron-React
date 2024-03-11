@@ -15,7 +15,7 @@ import SimpleNumpad from "./SimpleNumpad";
 
 const Source = ({ setPage }) => {
   const [subPage, setSubpage] = useState("1");
-  const [pinCode, setPincode] = useState("1234")
+  const [pinCode, SetPincode] = useState("000")
 
   const containerStyle = {
     vertical: {
@@ -81,11 +81,8 @@ const Source = ({ setPage }) => {
 console.log(subPage)
   return (
     <>
-    <Menu setSubpage={setSubpage}/>
-
-      <Navbar setPage={setPage} />
       <div style={containerStyle.vertical}>
-
+        <Menu setSubpage={setSubpage}/>
       </div>
       <div>
         {subPage === "1" ? (
