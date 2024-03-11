@@ -6,14 +6,16 @@ import Projector from "./Projector";
 import Camera from "./Camera";
 import PowerSettingsNewIcon from '@mui/icons-material/PowerSettingsNew';
 import Electric from "./Electric";
-
 import Navbar from "./NavBar";
 import "./style.css";
 import { useState } from "react";
 import DsDisplays from "./DsDisplays";
+import MuiNumpad from "./MuiNumpad";
+import SimpleNumpad from "./SimpleNumpad";
 
 const Source = ({ setPage }) => {
   const [subPage, setSubpage] = useState("1");
+  const [pinCode, setPincode] = useState("1234")
 
   const containerStyle = {
     vertical: {
@@ -79,9 +81,11 @@ const Source = ({ setPage }) => {
 console.log(subPage)
   return (
     <>
-      
+    <Menu setSubpage={setSubpage}/>
+
+      <Navbar setPage={setPage} />
       <div style={containerStyle.vertical}>
-        <Menu setSubpage={setSubpage}/>
+
       </div>
       <div>
         {subPage === "1" ? (
@@ -108,15 +112,9 @@ console.log(subPage)
             
         ): null}
       </div>
-      <div style={powerContainerStyle}>
       
-      <PowerSettingsNewIcon
-      onClick={handleClick}
-        sx={{
-          fontSize: "90px"
-        }}
-      />
-      </div>
+      
+ 
     </>
   );
 };
