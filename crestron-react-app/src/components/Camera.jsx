@@ -43,6 +43,7 @@ const Camera = () => {
       color: "white",
       borderWidht: "2px",
       borderColor: "white",
+      margin: "5px",
       borderRadius: "15px", // Adjust spacing between buttons
     },
     label: {

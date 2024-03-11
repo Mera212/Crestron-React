@@ -40,6 +40,7 @@ const Projector = () => {
       textAlign: "center",
       backgroundColor: "#249889",
       color: "white",
+      margin: "5px",
       borderWidht: "2px",
         borderColor:"white",
       borderRadius: "15px", // Adjust spacing between buttons

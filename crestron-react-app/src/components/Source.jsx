@@ -79,6 +79,7 @@ const Source = ({ setPage }) => {
 console.log(subPage)
   return (
     <>
+    <Navbar setPage={setPage} />
       
       <div style={containerStyle.vertical}>
         <Menu setSubpage={setSubpage}/>
@@ -108,15 +109,7 @@ console.log(subPage)
             
         ): null}
       </div>
-      <div style={powerContainerStyle}>
-      
-      <PowerSettingsNewIcon
-      onClick={handleClick}
-        sx={{
-          fontSize: "90px"
-        }}
-      />
-      </div>
+     
     </>
   );
 };

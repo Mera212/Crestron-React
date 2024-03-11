@@ -5,6 +5,7 @@ import Source from "./components/Source";
 import ShutDown from "./components/ShutDown";
 import backgroundImageA from "./assets/1920x1200-4a.jpg";
 import backgroundImageB from "./assets/1920x1200-4b.jpg";
+import Navbar from "./components/NavBar";
 
 function App() {
   const [page, setPage] = useState("start");
@@ -50,7 +51,8 @@ function App() {
 
   return (
     <>
-    
+    <Navbar></Navbar> 
+
       <div style={styles.container}>
         {page === "start" ? (
           <Start

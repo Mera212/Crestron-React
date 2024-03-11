@@ -41,6 +41,7 @@ const DsDisplays = () => {
       backgroundColor: "#249889",
       borderWidht: "2px",
       borderColor: "white",
+      margin: "5px",
       color: "white",
       borderRadius: "15px", // Adjust spacing between buttons
     },

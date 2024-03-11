@@ -43,6 +43,7 @@ const Audio = () => {
       borderWidht: "2px",
       borderColor: "white",
       color: "white",
+      margin: "5px",
       borderRadius: "15px", // Adjust spacing between buttons
     },
     label: {

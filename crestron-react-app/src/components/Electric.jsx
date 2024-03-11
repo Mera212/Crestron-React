@@ -41,6 +41,7 @@ const Electric = () => {
         textAlign: "center",
         backgroundColor: "#249889",
         color: "white",
+        margin: "5px",
         borderWidht: "20px",
         borderColor:"white",
         borderRadius: "15px", 
