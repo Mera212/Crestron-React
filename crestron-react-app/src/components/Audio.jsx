@@ -44,7 +44,7 @@ const Audio = () => {
       borderColor: "white",
       color: "white",
       margin: "5px",
-      borderRadius: "15px",
+      borderRadius: "15px", // Adjust spacing between buttons
     },
     label: {
       flexGrow: 1, // Allow label to expand to take up remaining space

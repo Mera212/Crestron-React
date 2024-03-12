@@ -1,12 +1,12 @@
-// Navbar.jsx
-
 import React from "react";
 import PropTypes from "prop-types";
+import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
 import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
 
 const Navbar = ({ setPage,numPad, setNumpad }) => {
   const handleClick = () => {
     setPage("shutdown");
+    console.log("Shutting down the system...");
     console.log("Shutting down the system...");
   };
   const showNumPad =()=>{
@@ -19,6 +19,7 @@ const Navbar = ({ setPage,numPad, setNumpad }) => {
     height:"50px",
     width: "100%", // Full width of the viewport
     backgroundColor: "#1655a2",
+    borderRadius:"0px 0px 0px 0px",
     borderRadius:"0px 0px 0px 0px",
     padding: "10px", // Adjust padding as needed
     color: "#fff", // Text color 

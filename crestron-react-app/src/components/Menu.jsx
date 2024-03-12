@@ -42,6 +42,7 @@ const Menu = ({setSubpage}) => {
       margin: "5px",
 
         borderColor:"white",
+        margin: "5px",
       color: "white",
       borderRadius: "15px", // Adjust spacing between buttons
     },

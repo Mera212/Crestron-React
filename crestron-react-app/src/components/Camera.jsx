@@ -42,7 +42,6 @@ const Camera = () => {
       backgroundColor: "#249889",
       borderWidht: "2px",
       borderColor: "white",
-      color: "white",
       margin: "5px",
       borderRadius: "15px", // Adjust spacing between buttons
     // Adjust spacing between buttons
