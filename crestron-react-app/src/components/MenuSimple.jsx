@@ -1,6 +1,6 @@
 import ButtonContainer from "./ButtonContainer";
 
-const Lights = () => {
+const MenuSimple = ({setSubpage}) => {
   const styles = {
     container: {
       display: "flex",
@@ -25,7 +25,7 @@ const Lights = () => {
       textAlign: "center",
       color: "white",
       borderWidht: "2px",
-      borderColor: "white",
+        borderColor:"white",
       margin: "5px",
       borderRadius: "15px", // Adjust spacing between buttons
     },
@@ -41,7 +41,7 @@ const Lights = () => {
       borderWidht: "2px",
       margin: "5px",
 
-      borderColor: "white",
+        borderColor:"white",
       color: "white",
       borderRadius: "15px", // Adjust spacing between buttons
     },
@@ -55,32 +55,28 @@ const Lights = () => {
 
   return (
     <ButtonContainer
-      styles={styles}
-      label="VALAISTUS"
-      count={8}
-      joinValues={[
-        "100",
-        "101",
-        "102",
-        "103",
-        "104",
-        "105",
-        "106",
-        "107",
-        "108",
-      ]}
-      buttonLabel={[
-        "TILANNE 1",
-        "TILANNE 2",
-        "TILANNE 3",
-        "TILANNE 4",
-        "TILANNE 5",
-        "TILANNE 6",
-        "TILANNE 7",
-        "TILANNE OFF",
-      ]}
-    />
+         styles={styles}
+          label="VALIKKO"
+          setSubpage={setSubpage}
+          count={3}
+          joinValues={["1", "2", "3"]}
+          buttonLabel={[
+            "VALAISTUS",
+            "AUDIO",
+            "PROJEKTORI",
+          ]}
+        />
   );
 };
 
-export default Lights;
+export default MenuSimple;
+
+
+
+
+
+
+
+
+
+

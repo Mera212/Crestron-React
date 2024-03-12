@@ -40,10 +40,12 @@ const Camera = () => {
       width: "135px",
       textAlign: "center",
       backgroundColor: "#249889",
-      color: "white",
       borderWidht: "2px",
       borderColor: "white",
+      color: "white",
+      margin: "5px",
       borderRadius: "15px", // Adjust spacing between buttons
+    // Adjust spacing between buttons
     },
     label: {
       flexGrow: 1, // Allow label to expand to take up remaining space
@@ -58,11 +60,16 @@ const Camera = () => {
     },
     cameraControls: {
       position: "absolute",
-      bottom: "1000px",
+      bottom: "1080px",
       right: "1500px",
 
       marginLeft: "1px",
     },
+    zoom:{
+      position:"fixed",
+      right: "100px",
+      bottom:'130px'
+    }
   };
 
   return (
@@ -96,7 +103,7 @@ const Camera = () => {
           style={{
             position: "absolute",
             left: "1150px",
-            top: "320px",
+            top: "380px",
             fontSize: "30px",
           }}>
           KAMERA-OHJAUKSET
@@ -155,7 +162,9 @@ const Camera = () => {
             minWidth: 300,
           }}
         />
+        
       </div>
+      <div style={styles.zoom}>
       <ButtonContainer
           styles={styles}
           label="ZOOM"
@@ -163,6 +172,7 @@ const Camera = () => {
           joinValues={["100", "101", "102"]}
           buttonLabel={["+", "-"]}
         />
+        </div>
 
     </>
   );

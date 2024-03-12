@@ -1,7 +1,7 @@
 import ButtonContainer from "./ButtonContainer";
 import VolumeSlider from "./VolumeSlider";
 
-const Audio = () => {
+const AudioAdvanced = () => {
   const styles = {
     container: {
       display: "flex",
@@ -13,8 +13,8 @@ const Audio = () => {
       flexWrap: "wrap",
       justifyContent: "space-around",
       width: "583px",
-      marginTop: "80px",
-      marginBottom: "80px",
+      marginTop: "10px",
+      marginBottom: "20px",
     },
     button: {
       display: "flex",
@@ -90,10 +90,30 @@ const Audio = () => {
             buttonLabel={["PÄÄLLE", "POIS"]}
             joinValues={["122", "123"]}
           />
+           <ButtonContainer
+            styles={styles}
+            label="AULA"
+            count={2}
+            buttonLabel={["PÄÄLLE", "POIS"]}
+            joinValues={["122", "123"]}
+          />
+           <ButtonContainer
+            styles={styles}
+            label=""
+            count={2}
+            buttonLabel={["MIXERI STREEMIIN", "PERUSÄÄNET STREEMIIN"]}
+            joinValues={["122", "123"]}
+          />'<ButtonContainer
+            styles={styles}
+            label=""
+            count={2}
+            buttonLabel={["LANGATTOMAT MIXERIIN", "LANGATTOMAT ILMAN MIXERIÄ"]}
+            joinValues={["122", "123"]}
+          />
         </div>
       </div>
     </>
   );
 };
 
-export default Audio;
+export default AudioAdvanced;

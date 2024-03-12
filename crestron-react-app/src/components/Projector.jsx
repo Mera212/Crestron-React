@@ -12,8 +12,8 @@ const Projector = () => {
       flexWrap: "wrap",
       justifyContent: "space-around",
       width: "583px",
-      marginTop: "60px",
-      marginBottom: "60px",
+      marginTop: "10px",
+      marginBottom: "25px",
     },
     button: {
       display: "flex",
@@ -41,6 +41,8 @@ const Projector = () => {
       backgroundColor: "#249889",
       color: "white",
       borderWidht: "2px",
+      margin: "5px",
+
         borderColor:"white",
       borderRadius: "15px", // Adjust spacing between buttons
     },

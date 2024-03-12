@@ -8,7 +8,7 @@ import { Button, Grid } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   container: {
     padding: 0,
-    width: '100%',
+    width: '30%',
     backgroundColor:'none',
    
   },
@@ -18,6 +18,13 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor:'white',
   },
 }));
+const enterButton ={
+  display:'flex',
+  padding:'10px',
+  alingItems:'right',
+   justifyContent: "center",
+
+}
 
 const MuiNumpad = (props) => {
   const {
@@ -32,18 +39,31 @@ const MuiNumpad = (props) => {
 
   const handleOnChange = (_value) => {
     const newValue = inputValue.concat(_value);
+    console.log("imput",inputValue)
+    console.log(newValue)
     setInputValue(newValue);
     onChange(newValue);
+    return newValue;
+    
     
   }
 
   const onButtonPress = (_value) => {
-    if (onChange) handleOnChange(_value);
-    if (onKeyPress) onKeyPress(_value);
-  }
+    console.log("Input value:", inputValue);
+    console.log("_Value:", _value);
+    
+    // Convert both values to strings and concatenate them
+    const newPin = inputValue + _value.toString();
+    console.log("New Pin:", newPin);
+
+    // Handle further operations if needed
+    handleOnChange(_value);
+    
+};
+
+
 
   const handleClear = () => {
-    setPincode(inputValue);
     setInputValue('');
     onChange('');
   }
@@ -53,7 +73,13 @@ const MuiNumpad = (props) => {
     setInputValue(newString);
     onChange(newString);
   }
-
+  const handleEnterPress = (newValue) => {
+    console.log("Enter", newValue.toString())
+      setPincode(newValue.toString());
+      setInputValue('');
+      onChange('');
+    
+  };
   return (
     <Grid container className={classes.container} spacing={2}>
       <Grid item xs={12}>
@@ -93,12 +119,10 @@ const MuiNumpad = (props) => {
           </Grid>
           <Grid key="clear" item>
             <Button disabled={!inputValue.length} onClick={handleClear} color="primary" variant="outlined" className={classes.button}>C</Button>
-            <Grid key="Enter" item>
-            <Button  onClick={handleClear} color="primary" variant="outlined" className={classes.button}>C</Button>
-            </Grid>
           </Grid>
+          
         </Grid>
-      </Grid>
+      </Grid><button style={enterButton} onClick={handleEnterPress}>ENTER</button>
     </Grid>
   );
 }

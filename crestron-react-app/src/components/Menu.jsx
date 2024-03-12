@@ -39,6 +39,8 @@ const Menu = ({setSubpage}) => {
       textAlign: "center",
       backgroundColor: "#249889",
       borderWidht: "2px",
+      margin: "5px",
+
         borderColor:"white",
       color: "white",
       borderRadius: "15px", // Adjust spacing between buttons
@@ -56,15 +58,16 @@ const Menu = ({setSubpage}) => {
          styles={styles}
           label="VALIKKO"
           setSubpage={setSubpage}
-          count={6}
-          joinValues={["1", "2", "3", "4", "5","6"]}
+          count={7}
+          joinValues={["1", "2", "3", "4", "5","6","7"]}
           buttonLabel={[
             "VALAISTUS",
             "AUDIO",
             "PROJEKTORI",
             "JUORU",
             "JUORU AUDIO",
-            "SÄHKÖT"
+            "SÄHKÖT",
+            "KAMERAT"
           ]}
         />
   );

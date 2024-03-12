@@ -21,13 +21,13 @@ const DsDisplays = () => {
       alignItems: "center",
       padding: "10px",
       backgroundColor: "#1655a2",
-      height: "60px",
-      width: "108px",
+      height: "45px",
+      width: "81px",
       textAlign: "center",
       color: "white",
       borderWidht: "2px",
       borderColor: "white",
-      margin: "5px",
+      margin: "1px",
       borderRadius: "15px", // Adjust spacing between buttons
     },
     buttonSelected: {
@@ -35,11 +35,12 @@ const DsDisplays = () => {
       justifyContent: "center",
       alignItems: "center",
       padding: "1px",
-      height: "60px",
-      width: "108px",
+      height: "45px",
+      width: "81px",
       textAlign: "center",
       backgroundColor: "#249889",
       borderWidht: "2px",
+      margin: '1px',
       borderColor: "white",
       color: "white",
       borderRadius: "15px", // Adjust spacing between buttons
@@ -52,7 +53,7 @@ const DsDisplays = () => {
     },
     ds: {
       display: "flex",
-      height: "90px",
+      height: "70px",
     },
     dsContainer: {},
   };
@@ -77,7 +78,7 @@ const DsDisplays = () => {
       <div style={styles.ds}>
         <ButtonContainer
           styles={styles}
-          label="CV-14 ESINTYJÄHUONE VASEN"
+          label="CV-07 ESIINTYJÄHUONE OIKEA"
           count={2}
           joinValues={["100", "101"]}
           buttonLabel={["ON", "OFF"]}
@@ -93,7 +94,7 @@ const DsDisplays = () => {
       <div style={styles.ds}>
         <ButtonContainer
           styles={styles}
-          label="CV-14 ESINTYJÄHUONE VASEN"
+          label="C-118 ESIINTYJÄHUONE VASEN"
           count={2}
           joinValues={["100", "101"]}
           buttonLabel={["ON", "OFF"]}
@@ -106,10 +107,11 @@ const DsDisplays = () => {
           buttonLabel={["ON", "OFF"]}
         />
       </div>
+      <div>
       <div style={styles.ds}>
         <ButtonContainer
           styles={styles}
-          label="CV-14 ESINTYJÄHUONE"
+          label="C-111 ESIINTYJÄHUONE VASEN"
           count={2}
           joinValues={["100", "101"]}
           buttonLabel={["ON", "OFF"]}
@@ -126,7 +128,7 @@ const DsDisplays = () => {
         <div style={styles.ds}>
           <ButtonContainer
             styles={styles}
-            label="CV-14  VASEN"
+            label="B-117 VAHTIMESTARI"
             count={2}
             joinValues={["100", "101"]}
             buttonLabel={["ON", "OFF"]}
@@ -142,7 +144,7 @@ const DsDisplays = () => {
         <div style={styles.ds}>
           <ButtonContainer
             styles={styles}
-            label="CV-14 ESINTYJÄHUONE VASEN"
+            label="C-139 KÄYTÄVÄ"
             count={2}
             joinValues={["100", "101"]}
             buttonLabel={["ON", "OFF"]}
@@ -158,7 +160,7 @@ const DsDisplays = () => {
         <div style={styles.ds}>
           <ButtonContainer
             styles={styles}
-            label="CV-14 ESINTYJÄHUONE VASEN"
+            label="CV-126 VAATESÄILYTYS"
             count={2}
             joinValues={["100", "101"]}
             buttonLabel={["ON", "OFF"]}
@@ -174,7 +176,7 @@ const DsDisplays = () => {
         <div style={styles.ds}>
           <ButtonContainer
             styles={styles}
-            label="CV-14 ESINTYJÄHUONE VASEN"
+            label="C-207 ESIINTYJÄ LÄMPIÖ"
             count={2}
             joinValues={["100", "101"]}
             buttonLabel={["ON", "OFF"]}
@@ -186,7 +188,7 @@ const DsDisplays = () => {
             joinValues={["100", "101"]}
             buttonLabel={["ON", "OFF"]}
           />
-        </div>
+        </div></div>
       </div>
     </>
   );
