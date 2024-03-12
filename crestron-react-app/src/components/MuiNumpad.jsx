@@ -9,13 +9,15 @@ const useStyles = makeStyles((theme) => ({
   container: {
     padding: 0,
     width: '30%',
-    backgroundColor:'none',
+    height:"300px",
+    backgroundColor:'#989dac',
    
   },
   numberRow: {
   },
   button: {
-    backgroundColor:'white',
+    backgroundColor:'#1655a2',
+    color:"white",
   },
 }));
 const enterButton ={
@@ -23,6 +25,8 @@ const enterButton ={
   padding:'10px',
   alingItems:'right',
    justifyContent: "center",
+   backgroundColor:'#1655a2',
+   color:"white",
 
 }
 
