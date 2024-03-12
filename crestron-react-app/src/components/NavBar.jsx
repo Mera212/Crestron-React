@@ -4,14 +4,18 @@ import React from "react";
 import PropTypes from "prop-types";
 import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
 
-const Navbar = ({ setPage,numPad, setNumpad }) => {
+const Navbar = ({ setPage,numPad, setNumpad,setPincode,pincode }) => {
+  
   const handleClick = () => {
     setPage("shutdown");
     console.log("Shutting down the system...");
   };
-  const showNumPad =()=>{
+  const showNumPad =(label)=>{
     setNumpad(!numPad)
-    console.log("Showing Num Pad")
+   
+  }
+  const singOut =()=>{
+    setPincode("0000")
   }
   const navbarStyle = {
     position: "fixed", // Fixed position so it stays at the top
@@ -30,7 +34,7 @@ const Navbar = ({ setPage,numPad, setNumpad }) => {
   };
   const sourceStyle ={
     position :'fixed',
-    left:'15%',
+    left:'30%',
     top:'0px',
     margin: "10px",
   };
@@ -41,7 +45,7 @@ const Navbar = ({ setPage,numPad, setNumpad }) => {
     //padding: "5px",
     backgroundColor: "#1655a2",
     height: "50px",
-    width: "108px",
+    width: "115px",
     textAlign: "center",
     color: "white",
     borderWidht: "2px",
@@ -54,6 +58,7 @@ const Navbar = ({ setPage,numPad, setNumpad }) => {
   return (
     <div style={navbarStyle}>
     <button style={button} onClick={showNumPad}>PÄÄKÄYTTÄJÄ</button>
+    <button style={button} onClick={singOut}>PERUSKÄYTTÖ</button>
     <div style={sourceStyle}>
     <p >PROJEKTORIN LÄHDE:</p>
     <br></br>

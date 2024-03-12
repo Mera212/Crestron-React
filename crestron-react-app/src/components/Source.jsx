@@ -17,7 +17,7 @@ import AudioAdvanced from "./AudioAdvanced";
 
 const Source = ({ setPage }) => {
   const [subPage, setSubpage] = useState("1");
-  const [pinCode, SetPincode] = useState("0000");
+  const [pinCode, setPincode] = useState("1234");
   const [numPad, setNumpad] = useState(false);
 
   const containerStyle = {
@@ -94,6 +94,7 @@ const Source = ({ setPage }) => {
       <Navbar
         numPad={numPad}
         setNumpad={setNumpad}
+        setPincode={setPincode}
       />
       <div style={containerStyle.vertical}>
         {pinCode === "1234" ? (
@@ -103,7 +104,12 @@ const Source = ({ setPage }) => {
         )}
       </div>
       <div style={containerStyle.numPad}>
-        {numPad === true ? <MuiNumpad SetPincode={SetPincode} /> : null}
+        {numPad === true ? (
+          <MuiNumpad
+            setPincode={setPincode}
+            setNumpad={setNumpad}
+          />
+        ) : null}
       </div>
       <div>
         {subPage === "1" ? (

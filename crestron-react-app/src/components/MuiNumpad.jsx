@@ -30,7 +30,8 @@ const MuiNumpad = (props) => {
   const {
     onChange,
     onKeyPress,
-    setPincode
+    setPincode,
+    setNumpad,
   } = props;
 
   const classes = useStyles();
@@ -39,9 +40,10 @@ const MuiNumpad = (props) => {
 
   const handleOnChange = (_value) => {
     const newValue = inputValue.concat(_value);
-    console.log("imput",inputValue)
+    
     console.log(newValue)
     setInputValue(newValue);
+    console.log("onclick input",inputValue)
     onChange(newValue);
     return newValue;
     
@@ -58,6 +60,7 @@ const MuiNumpad = (props) => {
 
     // Handle further operations if needed
     handleOnChange(_value);
+    return newPin;
     
 };
 
@@ -73,17 +76,19 @@ const MuiNumpad = (props) => {
     setInputValue(newString);
     onChange(newString);
   }
-  const handleEnterPress = (newValue) => {
-    console.log("Enter", newValue.toString())
-      setPincode(newValue.toString());
-      setInputValue('');
-      onChange('');
-    
+  const handleEnterPress = () => {
+    console.log("Pin code set to:", inputValue); // Log the pin code value
+    setPincode(inputValue); // Set the pin code
+    setInputValue(''); // Clear the input value
+    //onChange(''); // Optionally, trigger the onChange event
+    setNumpad(false)
   };
+
+
   return (
     <Grid container className={classes.container} spacing={2}>
       <Grid item xs={12}>
-        <Grid container justify="center" spacing={2}>
+        <Grid container justifyContent="center" spacing={2}>
           {[1, 2, 3].map((value) => (
             <Grid key={value} item>
               <Button onClick={() => onButtonPress(value)} color="primary" variant="outlined" className={classes.button}>{value}</Button>
