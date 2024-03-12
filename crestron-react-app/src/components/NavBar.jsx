@@ -16,6 +16,7 @@ const Navbar = ({ setPage,numPad, setNumpad,setPincode,pincode }) => {
   }
   const singOut =()=>{
     setPincode("0000")
+    setNumpad(false)
   }
   const navbarStyle = {
     position: "fixed", // Fixed position so it stays at the top
