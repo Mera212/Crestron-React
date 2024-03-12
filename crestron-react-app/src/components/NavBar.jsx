@@ -1,7 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
 import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
-import PowerSettingsNewIcon from "@mui/icons-material/PowerSettingsNew";
 
 const Navbar = ({ setPage,numPad, setNumpad }) => {
   const handleClick = () => {
