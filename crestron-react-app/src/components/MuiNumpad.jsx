@@ -8,25 +8,33 @@ import { Button, Grid } from '@material-ui/core';
 const useStyles = makeStyles((theme) => ({
   container: {
     padding: 0,
-    width: '30%',
-    height:"300px",
-    backgroundColor:'#989dac',
+    width: '60%',
+    height:"600px",
+    backgroundColor:'#249889',
+    justifyContent: "center",
+
    
   },
   numberRow: {
   },
   button: {
+    height: "60px",
+    width: "108px",
     backgroundColor:'#1655a2',
     color:"white",
   },
 }));
 const enterButton ={
-  display:'flex',
+  height: "60px",
+  width: "108px",
+marginBottom:"20px",
   padding:'10px',
-  alingItems:'right',
+  alingItems:'center',
    justifyContent: "center",
    backgroundColor:'#1655a2',
    color:"white",
+   textAlign: "center",
+
 
 }
 
@@ -90,7 +98,7 @@ const MuiNumpad = (props) => {
 
 
   return (
-    <Grid container className={classes.container} spacing={2}>
+    <Grid container className={classes.container} spacing={8}>
       <Grid item xs={12}>
         <Grid container justifyContent="center" spacing={2}>
           {[1, 2, 3].map((value) => (

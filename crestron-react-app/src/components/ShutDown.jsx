@@ -13,6 +13,7 @@ const ShutDown = ({ setPage }) => {
         joinValues={[1, 2, 3, 4, 5]}
         buttonLabel={["PALAA", "SAMMUTA"]}
         count={2}
+        handleClick={handleClick}
       />
     </div>
   );

@@ -6,6 +6,9 @@
 	--button-color: #1655a2;
 	--button-selected-color: #249889;
   }
+  button {
+    box-shadow:0px 0px 0px 0px rgba(0, 0, 0, 0) ;
+  }
   
 
 html, body, div, span, applet, object, iframe,
